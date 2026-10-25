@@ -73,6 +73,32 @@ in questo esempio l'**88,7%** della sezione, con la suola laterale come zona pi�
 
 ![Copertura della sezione](img/ruota_copertura.png)
 
+## Difetti artificiali: cosa vede il fascio e cosa vede il B-scan
+
+Rotaia di prova da 1 m importata come **mesh 3D** (OBJ), con difetti artificiali: un foro
+nell'anima con due cricche (tipico dei fori di giunzione), due fori trasversali Ø6 a 10 e
+30 mm di profondità nel fungo e un taglio trasversale nel fungo.
+
+**Sonda a 0° sopra il foro dell'anima**: il fascio si ferma sul foro, viene deviato e
+non raggiunge più la suola.
+
+| Viste 2D | Vista 3D |
+|---|---|
+| ![Fascio sul foro](img/difetti_interfaccia_foro.png) | ![Fascio sul foro 3D](img/difetti_3d_foro_anima.png) |
+
+**B-scan**: la stessa sonda fatta scorrere lungo la rotaia (306 posizioni, passo 2 mm).
+Ogni difetto produce il suo eco alla profondità giusta (bordo superiore dei fori: 7 e
+27 mm per i fori Ø6 a 10 e 30 mm) e "spegne" l'eco di fondo sotto di sé, esattamente come
+su uno strumento reale.
+
+![B-scan dei difetti](img/difetti_bscan.png)
+
+**Sonda a 70° sul taglio trasversale del fungo**: il fascio colpisce la cricca a 28 mm di
+profondità e viene riflesso **in avanti**, verso la suola, invece di tornare alla sonda.
+È il motivo per cui un difetto verticale si cerca con più angoli e con tecniche tandem.
+
+![Fascio a 70° sulla cricca](img/difetti_3d_cricca_70.png)
+
 ## Rigore: verifica della fisica
 
 - **Verifica sulla bibliografia** dei modelli (Ono, *Applied Sciences* 2020; articoli
